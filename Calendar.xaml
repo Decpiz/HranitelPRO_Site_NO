@@ -1,0 +1,15 @@
+﻿<Window x:Class="PR_21._106_HranitelPRO_Practic.Calendar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR_21._106_HranitelPRO_Practic"
+        mc:Ignorable="d"
+        Title="Calendar" Height="200" Width="200"
+        Background="AliceBlue" ResizeMode="NoResize">
+    <Grid>
+        <Border Background="#FF24C824" CornerRadius="4" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Одобрена" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="3"/>
+        </Border>
+    </Grid>
+</Window>

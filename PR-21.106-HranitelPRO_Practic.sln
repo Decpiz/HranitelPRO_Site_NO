@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR-21.106-HranitelPRO_Practic", "PR-21.106-HranitelPRO_Practic.csproj", "{D67A99A5-7B6A-4F8B-B00E-F8F2FBBAA46E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D67A99A5-7B6A-4F8B-B00E-F8F2FBBAA46E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D67A99A5-7B6A-4F8B-B00E-F8F2FBBAA46E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D67A99A5-7B6A-4F8B-B00E-F8F2FBBAA46E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D67A99A5-7B6A-4F8B-B00E-F8F2FBBAA46E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD2DE17B-113A-4D17-ABC1-2995C01F6812}
+	EndGlobalSection
+EndGlobal

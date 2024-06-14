@@ -1,0 +1,217 @@
+﻿<Window x:Class="PR_21._106_HranitelPRO_Practic.WindowProfile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR_21._106_HranitelPRO_Practic"
+        mc:Ignorable="d"
+        Title="WindowProfile" MinHeight="720" MinWidth="1280"
+        WindowState="Maximized">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+
+
+
+        <Border BorderBrush="#FFFDBD60" BorderThickness="4 4 0 4" Grid.RowSpan="2"/>
+        <Border BorderBrush="#FFFDBD60" BorderThickness="4" Grid.Column="1" Grid.RowSpan="2"/>
+        <StackPanel Grid.Column="1" Background="#FFFFF4E3" Margin="4"/>
+        <StackPanel Background="#FFFFF4E3" Grid.RowSpan="2" Margin="4 4 0 4"/>
+
+        <Border BorderBrush="#FFFDBD60" BorderThickness="0 0 0 4" Grid.Column="1"/>
+
+        <!--<StackPanel Grid.Row="1" Grid.ColumnSpan="4">-->
+                
+
+                <!--<DataGrid ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}"
+                    RowStyle="{DynamicResource DataGridRowStyle1}"
+                    CellStyle="{DynamicResource DataGridCellStyle1}"
+                    Style="{DynamicResource DataGridStyle1}"
+                    x:Name="dtgApplications" AutoGenerateColumns="False" Margin="8,2,14,6" IsReadOnly="True">
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="№ Заявки:" Binding="{Binding Path=Nomer_zajavki}" FontWeight="Medium"/>
+                        <DataGridTextColumn Header="Подразделение:" Binding="{Binding Path=Division}"/>
+                        <DataGridTextColumn Header="Статус:" Binding="{Binding Path=Status}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock" x:Name="statusColor">
+                                    <Setter Property="Background" Value="#FFC7C7C7"/>
+                                    <Setter Property="Padding" Value="2"/>
+                                    <Setter Property="HorizontalAlignment" Value="Right"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>-->
+            
+            <!--</StackPanel>-->
+
+
+        <Grid Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            
+            <WrapPanel>
+                <Border Margin="10 10 0 0" Height="100" Width="100" BorderBrush="Black" BorderThickness="1" CornerRadius="2" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Image Source="F:\Егорка\Разное\Учеба\MyPrograms\C# Projects\PR-21.106-HranitelPRO_Practic\Images\Zaglushka_Logo.png" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                        Stretch="Fill" Cursor="Hand" IsEnabled="False" x:Name="imgUserPhoto"/>
+                </Border>
+
+                <StackPanel Margin="5 10">
+                    <TextBlock Text="Familia" HorizontalAlignment="Left" VerticalAlignment="Bottom"
+                            FontSize="20" FontWeight="Medium" FontFamily="Cascadia Code" x:Name="tbkSurname"/>
+                    <TextBlock Text="Imya" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20"
+                            FontWeight="Medium" FontFamily="Cascadia Code" Grid.Row="1" x:Name="tbkName" Margin="0 6"/>
+                    <TextBlock Text="" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20"
+                            FontWeight="Medium" FontFamily="Cascadia Code" Grid.Row="2" x:Name="tbkPatronymic"/>
+                </StackPanel>
+            </WrapPanel>
+
+            <StackPanel Grid.Row="2" Margin="0 12 0 16" VerticalAlignment="Bottom">
+
+                <Button x:Name="btnCancelEdit" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                        BorderBrush="#FFFDBD60" Background="Transparent" Click="btnSaveEdit_Click" Visibility="Collapsed">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="8"/>
+                        </Style>
+                    </Button.Resources>
+
+                    <TextBlock Text="Отменить" FontSize="14" FontWeight="Medium" Margin="74 3"/>
+                </Button>
+
+                <Button x:Name="btnEditProfile" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 5 0 0"
+                        BorderBrush="#FFFDBD60" Background="Transparent" Click="btnEditProfile_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="8"/>
+                        </Style>
+                    </Button.Resources>
+
+                    <TextBlock Text="Редактировать" FontSize="14" FontWeight="Medium" Margin="60 3"/>
+                </Button>
+
+                <Button x:Name="btnNewPassword" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                        BorderBrush="#FFFDBD60" Background="Transparent" Margin="0 5 0 0" Visibility="Collapsed">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="8"/>
+                        </Style>
+                    </Button.Resources>
+
+                    <TextBlock Text="Сменить пароль" FontSize="14" FontWeight="Medium" Margin="54 3"/>
+                </Button>
+
+                <Button x:Name="btnGoBack" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                        BorderBrush="Transparent" Background="Transparent" Margin="0 5 0 0" Click="btnGoBack_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="8"/>
+                        </Style>
+                    </Button.Resources>
+
+                    <TextBlock Text="На главную" FontSize="14" FontWeight="Medium" Margin="69 3" Foreground="Gray"/>
+                </Button>
+            </StackPanel>
+
+                <TextBlock Text="Организация:" Margin="9 4 0 0" FontSize="28" FontWeight="Medium" VerticalAlignment="Top"
+                                FontFamily="Bahnschrift SemiBold SemiCondensed" Grid.Row="1"/>
+                <Ellipse x:Name="elipsOtmetka" Fill="Red" Width="18" Height="18" VerticalAlignment="Top" Margin=" 0 12 10 0"
+                         ToolTip="Не подтверждена" HorizontalAlignment="Right" Grid.Row="1" Stroke="Black"/>
+            
+            <StackPanel Grid.Row="1" Margin="4 40 0 0" IsEnabled="False" x:Name="spEditPanel">
+                <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="tbOrganizationName" Text="Название организации" Margin="5 5"
+                         FontSize="18" FontFamily="Cascadia Code" SelectionChanged="tbOrganizationName_SelectionChanged" 
+                         GotFocus="tbOrganizationName_GotFocus" LostFocus="tbOrganizationName_LostFocus"/>
+                
+                <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="tbOrganizationINN" Text="ИНН организации" Margin="5 5"
+                         FontSize="18" FontFamily="Cascadia Code" SelectionChanged="tbOrganizationINN_SelectionChanged" 
+                         LostFocus="tbOrganizationINN_LostFocus" GotFocus="tbOrganizationINN_GotFocus"/>
+                
+                <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="tbOrganizationGenDirector" Text="Генеральный директор" Margin="5 5"
+                         FontSize="18" FontFamily="Cascadia Code" SelectionChanged="tbOrganizationGenDirector_SelectionChanged" 
+                         LostFocus="tbOrganizationGenDirector_LostFocus" GotFocus="tbOrganizationGenDirector_GotFocus"/>
+                
+                <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="tbOrganizationOGRN" Text="ОГРН номер" Margin="5 5"
+                         FontSize="18" FontFamily="Cascadia Code" SelectionChanged="tbOrganizationOGRN_SelectionChanged" 
+                         LostFocus="tbOrganizationOGRN_LostFocus" GotFocus="tbOrganizationOGRN_GotFocus"/>
+
+                <Button x:Name="btnSaveEditOrganization" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                        BorderBrush="#FFFDBD60" Background="Transparent" Visibility="Collapsed" Click="btnSaveEditOrganization_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="8"/>
+                        </Style>
+                    </Button.Resources>
+
+                    <TextBlock Text="Сохранить" FontSize="14" FontWeight="Medium" Margin="74 3"/>
+                </Button>
+
+
+
+                <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="tbLastName" Text="Фамилия" Margin="5 120 5 5"
+                         FontSize="18" FontFamily="Cascadia Code" Visibility="Hidden" SelectionChanged="tbLastName_SelectionChanged" 
+                         LostFocus="tbLastName_LostFocus" GotFocus="tbLastName_GotFocus"/>
+                
+                <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="tbFirstName" Text="Имя" Margin="5 5"
+                         FontSize="18" FontFamily="Cascadia Code" Visibility="Hidden" SelectionChanged="tbFirstName_SelectionChanged" 
+                         LostFocus="tbFirstName_LostFocus" GotFocus="tbFirstName_GotFocus"/>
+                
+                <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="tbPatronymic" Text="Отчество" Margin="5 5"
+                         FontSize="18" FontFamily="Cascadia Code" Visibility="Hidden" SelectionChanged="tbPatronymic_SelectionChanged" 
+                         LostFocus="tbPatronymic_LostFocus" GotFocus="tbPatronymic_GotFocus"/>
+
+                <Button x:Name="btnSaveEditFIO" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                        BorderBrush="#FFFDBD60" Background="Transparent" Visibility="Collapsed" Click="btnSaveEditFIO_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="8"/>
+                        </Style>
+                    </Button.Resources>
+
+                    <TextBlock Text="Сохранить" FontSize="14" FontWeight="Medium" Margin="74 3"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock Text="История заявок:" Margin="8 4 0 0" FontSize="36" FontWeight="Medium" VerticalAlignment="Bottom"
+                            FontFamily="Bahnschrift SemiBold SemiCondensed"/>
+            
+            <ListView ItemContainerStyle="{DynamicResource ListViewItemContainerStyle1}" x:Name="lvApplications" Grid.ColumnSpan="4" Margin="4 0 4 4" d:ItemsSource="{d:SampleData ItemCount=1}"
+                      HorizontalContentAlignment="Stretch" Style="{StaticResource ListViewStyle1}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                        
+                            <TextBlock Text="{Binding Path = Nomer_zajavki}" HorizontalAlignment="Left" FontSize="18" FontWeight="Medium"/>
+                            <TextBlock Text="{Binding Path = Division}" Grid.Column="1" HorizontalAlignment="Left" FontSize="18"/>
+
+                            <Border Background="{Binding Path = StatusColor}" Grid.Column="2" HorizontalAlignment="Right" CornerRadius="4" ToolTip="{Binding Path=Message}">
+                                    <TextBlock Text="{Binding Path = Status}" Padding="2" FontSize="12" FontWeight="Medium" VerticalAlignment="Center"/>
+                            </Border>
+                            
+                            
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <TextBlock Text="Список пуст..." VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 80 0 15"
+                       FontSize="42" Foreground="Gray" x:Name="tbEmptyAppli_1" Visibility="Collapsed"/>
+            <TextBlock Text="Вы можете оформить заявку в главном меню, выбрав 'Личное' или 'Групповое' посещение" VerticalAlignment="Center" 
+                       HorizontalAlignment="Center" FontSize="20" Foreground="Gray" x:Name="tbEmptyAppli_2" Visibility="Collapsed"/>
+        </StackPanel>
+    </Grid>
+</Window>
