@@ -28,7 +28,7 @@
                     <TextBlock Text="Регистрация" HorizontalAlignment="Center" FontSize="18" FontWeight="Medium" Margin="100,4,100,4"/>
                 </Border>
 
-                <TextBlock x:Name="txbEmail" Text="E-mail:" Grid.Row="1" HorizontalAlignment="Center" FontSize="14" FontWeight="Medium" Margin="4,4,4,1"/>
+                <TextBlock x:Name="txbEmail" Text="ЙОУ МОДОФАКУА" Grid.Row="1" HorizontalAlignment="Center" FontSize="14" FontWeight="Medium" Margin="4,4,4,1"/>
                 
                 <TextBox x:Name="tbInputEmail" Grid.Row="2" Margin="20,1,20,4" MaxLength="35">
                     <TextBox.Resources>
